@@ -1,28 +1,28 @@
 class Rma < Formula
   desc "Ultra-fast Rust-native code intelligence and security analyzer"
   homepage "https://github.com/bumahkib7/rust-monorepo-analyzer"
-  version "0.7.0"
+  version "0.8.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.7.0/rma-aarch64-apple-darwin.tar.gz"
-      sha256 "847c32567e23e0eb8c372c25b371a71244a5dc6abec6633499fe94ad46c2c5e9"
+      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.8.0/rma-aarch64-apple-darwin.tar.gz"
+      sha256 "a2a9159a83a35405151bedd7ae4883963d4c5c64d955db9c628a82e7fd5df481"
     end
     on_intel do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.7.0/rma-x86_64-apple-darwin.tar.gz"
-      sha256 "34a673586d0e76e010526fe4d0d5714dd348dc3cf2c817d795f9978c842927e2"
+      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.8.0/rma-x86_64-apple-darwin.tar.gz"
+      sha256 "cac60b2268e9394b37a9195b6082bd6995fa182a034c4d0680b5fbfbe01a26a3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.7.0/rma-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "82134ad8cd76002b6a5f8e53c65c43eb84d6aaba107e493907ed70cd28b53411"
+      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.8.0/rma-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b8f8bffd75fbdfb9f57bd3b2697269fe4720d2d74d35d03dfb3d18043f07148a"
     end
     on_intel do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.7.0/rma-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "54bdb4f55579d5002e080ae53c7d5ffa4697c618493fca8f19676fe23f47eac2"
+      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.8.0/rma-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "775875e4d1e4d29642ae875b21038e02f4e787699c103d8c36409982692423a4"
     end
   end
 
