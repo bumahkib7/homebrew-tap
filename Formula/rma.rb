@@ -1,28 +1,28 @@
 class Rma < Formula
   desc "Ultra-fast Rust-native code intelligence and security analyzer"
   homepage "https://github.com/bumahkib7/rust-monorepo-analyzer"
-  version "0.8.0"
+  version "0.14.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.8.0/rma-aarch64-apple-darwin.tar.gz"
-      sha256 "a2a9159a83a35405151bedd7ae4883963d4c5c64d955db9c628a82e7fd5df481"
+      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.14.0/rma-aarch64-apple-darwin.tar.gz"
+      sha256 "8fcfb89d15e5dfc9f23b18be837fa2e00d9b4bd520d404ef810b57ed8645acb2"
     end
     on_intel do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.8.0/rma-x86_64-apple-darwin.tar.gz"
-      sha256 "cac60b2268e9394b37a9195b6082bd6995fa182a034c4d0680b5fbfbe01a26a3"
+      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.14.0/rma-x86_64-apple-darwin.tar.gz"
+      sha256 "c57c97c9c06e95c0193cff42233c513f18cb75eeb2d74174e6f114359b52f180"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.8.0/rma-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b8f8bffd75fbdfb9f57bd3b2697269fe4720d2d74d35d03dfb3d18043f07148a"
+      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.14.0/rma-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b9c01b98f968368891bb8cae5bd44a94b6027ef2cc0571dd1dec3295901d13b1"
     end
     on_intel do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.8.0/rma-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "775875e4d1e4d29642ae875b21038e02f4e787699c103d8c36409982692423a4"
+      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.14.0/rma-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7d116c6489a6d7eaa8bcfa62071da2b79e178b738338815d5d6a45d69d384558"
     end
   end
 
