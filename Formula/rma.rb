@@ -1,28 +1,28 @@
 class Rma < Formula
   desc "Ultra-fast Rust-native code intelligence and security analyzer"
   homepage "https://github.com/bumahkib7/rust-monorepo-analyzer"
-  version "0.18.1"
+  version "0.18.2"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.18.1/rma-aarch64-apple-darwin.tar.gz"
-      sha256 "1ee76af7c533844de06bfc6333c1b6e01a8a042a3815f090992c650b099fee18"
+      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.18.2/rma-aarch64-apple-darwin.tar.gz"
+      sha256 "26d3299e3df19641ff1d8b44d6310f48dde242a89041a0ad67d49a6234bae6cd"
     end
     on_intel do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.18.1/rma-x86_64-apple-darwin.tar.gz"
-      sha256 "331da6204e811484d257890f6897abe437ce2cd4e63e333ce23133b20c8c44dd"
+      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.18.2/rma-x86_64-apple-darwin.tar.gz"
+      sha256 "eeddbed93b39d724d770d50db2d3529ba8005394b3191fcbe00712a560d8d5f9"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.18.1/rma-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ded0f19de95e585439991cbdd4f63f3f73ad3d28c5aefc7a7183a9cd03b21e6d"
+      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.18.2/rma-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "0b0e5c22d41e72f21b7bbf4a8e2cb78f78f3c4d81632ea450a91cec88dfd2b85"
     end
     on_intel do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.18.1/rma-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "28a046ffa6b3ea2c7e4669fea0c76aa185b4f96076b8ffe3e391e313dda666ad"
+      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.18.2/rma-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6e4ca89cec1b952ac9ce830f8d37770d29e2796aa5a9dc9352e2e38de1edd8de"
     end
   end
 
