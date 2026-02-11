@@ -1,28 +1,28 @@
 class Qryon < Formula
   desc "Ultra-fast Rust-native code intelligence and security analyzer"
   homepage "https://github.com/bumahkib7/qryon"
-  version "0.20.0"
+  version "0.20.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/bumahkib7/qryon/releases/download/v0.20.0/qryon-aarch64-apple-darwin.tar.gz"
-      sha256 "a28cd476f9918abe9c1441434ab7e175d1e9201ac31a4e1a0ca730744f332f64"
+      url "https://github.com/bumahkib7/qryon/releases/download/v0.20.1/qryon-aarch64-apple-darwin.tar.gz"
+      sha256 "ad194d136bc7564c2c95dc65b8d454ee7dc8f53805b5567c37782b1b9041b56c"
     end
     on_intel do
-      url "https://github.com/bumahkib7/qryon/releases/download/v0.20.0/qryon-x86_64-apple-darwin.tar.gz"
-      sha256 "ef960a628886c42e159ed4577652e09cc5b34297143e9666aa0ab11418244809"
+      url "https://github.com/bumahkib7/qryon/releases/download/v0.20.1/qryon-x86_64-apple-darwin.tar.gz"
+      sha256 "9559b910f8e7e6a9d589333ae2ea415373d5e5062d025bde52377e71aca79bb1"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/bumahkib7/qryon/releases/download/v0.20.0/qryon-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "73ea545687f5b2179d9a96d15f10630a25eaecd03c918a33b5add478fcb844a0"
+      url "https://github.com/bumahkib7/qryon/releases/download/v0.20.1/qryon-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "35c8d465b0004da5823b5e228b1ca58de9263e65876d40d1236c71693ffdd5ec"
     end
     on_intel do
-      url "https://github.com/bumahkib7/qryon/releases/download/v0.20.0/qryon-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6717d525265225bae43e5d7931f463ee81fc2105221c48a69e14e1bbb7d71335"
+      url "https://github.com/bumahkib7/qryon/releases/download/v0.20.1/qryon-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "61f344afc9be26ecbb77fa54a0caa37dab7776fa6c30c3b87fcbde490c247583"
     end
   end
 
