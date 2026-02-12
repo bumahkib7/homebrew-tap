@@ -1,42 +1,43 @@
 class Rma < Formula
-  desc "Ultra-fast Rust-native code intelligence and security analyzer"
-  homepage "https://github.com/bumahkib7/rust-monorepo-analyzer"
-  version "0.19.0"
+  desc "Ultra-fast Rust-native code intelligence and security analyzer (alias for qryon)"
+  homepage "https://github.com/bumahkib7/qryon"
+  version "0.20.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.19.0/rma-aarch64-apple-darwin.tar.gz"
-      sha256 "8d162d54a8054d5ff9bb428d420d10063c26e52c6c641458019a57f32497c071"
+      url "https://github.com/bumahkib7/qryon/releases/download/v0.20.1/qryon-aarch64-apple-darwin.tar.gz"
+      sha256 "ad194d136bc7564c2c95dc65b8d454ee7dc8f53805b5567c37782b1b9041b56c"
     end
     on_intel do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.19.0/rma-x86_64-apple-darwin.tar.gz"
-      sha256 "a5100214485ac0156d6968fb99e501642b6aa86823124ab74ed6b8f21822f714"
+      url "https://github.com/bumahkib7/qryon/releases/download/v0.20.1/qryon-x86_64-apple-darwin.tar.gz"
+      sha256 "9559b910f8e7e6a9d589333ae2ea415373d5e5062d025bde52377e71aca79bb1"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.19.0/rma-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "72ef48795332c4b9e3e24ba784652be1a8095f4f61cdb382dc3db6c3e4eb4e3a"
+      url "https://github.com/bumahkib7/qryon/releases/download/v0.20.1/qryon-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "35c8d465b0004da5823b5e228b1ca58de9263e65876d40d1236c71693ffdd5ec"
     end
     on_intel do
-      url "https://github.com/bumahkib7/rust-monorepo-analyzer/releases/download/v0.19.0/rma-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "cd33f72ec171ca2d73c2aba3e7277ac7c5b30f6959b36c1bb6c8f17b9753b264"
+      url "https://github.com/bumahkib7/qryon/releases/download/v0.20.1/qryon-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "61f344afc9be26ecbb77fa54a0caa37dab7776fa6c30c3b87fcbde490c247583"
     end
   end
 
   def install
-    bin.install "rma"
-    generate_completions_from_executable(bin/"rma", "completions")
+    bin.install "qryon"
+    bin.install_symlink "qryon" => "rma"
+    generate_completions_from_executable(bin/"qryon", "completions")
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/rma --version")
+    assert_match version.to_s, shell_output("#{bin}/qryon --version")
 
     # Test scanning a simple Rust file
     (testpath/"test.rs").write('fn main() { println!("hello"); }')
-    output = shell_output("#{bin}/rma scan #{testpath} --format json 2>&1")
+    output = shell_output("#{bin}/qryon scan #{testpath} --format json 2>&1")
     assert_match "findings", output
   end
 end
